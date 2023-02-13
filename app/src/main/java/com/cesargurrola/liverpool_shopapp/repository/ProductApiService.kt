@@ -24,7 +24,7 @@ interface ProductApiService {
         @Query("page-number") page: Int,
         @Query(minSo)
     ): Call<response>
-    /*
+
     @GET("v3/plp?")
     fun searchProducts2(
         @Query("search-string") query: String,
