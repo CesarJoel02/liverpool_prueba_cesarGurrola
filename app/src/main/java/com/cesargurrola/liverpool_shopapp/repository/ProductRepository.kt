@@ -1,6 +1,6 @@
 package com.cesargurrola.liverpool_shopapp.repository
 
-import com.cesargurrola.liverpool_shopapp.model.Product
+import com.cesargurrola.liverpool_shopapp.model.response
 import retrofit2.Call
 
 class ProductRepository {
@@ -8,8 +8,8 @@ class ProductRepository {
     val productApiService = retrofit.create(ProductApiService::class.java)
 
 
-    fun searchProducts(query: String): Call<List<Product>> {
-        return productApiService.searchProducts(query)
+    fun searchProducts(query: String, page : Int): Call<response> {
+        return productApiService.searchProducts(query,page)
     }
 
 }

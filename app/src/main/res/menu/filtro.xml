@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/predef"
+        android:title="Predefinida"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/min"
+        android:title="Menor Precio"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/max"
+        android:title="Mayor Precio"
+        app:showAsAction="never"/>
+
+</menu>
